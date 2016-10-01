@@ -27,7 +27,8 @@ namespace Tien_Bai2_Sep
             int tong, tongLe, tongChan;
 
             //Bat nguoi dung nhap vao day so
-            NhapDaySo(out daySo);
+            Nhap_Day_So:
+                NhapDaySo(out daySo);
 
             while (true)
             {
@@ -55,6 +56,12 @@ namespace Tien_Bai2_Sep
                     Console.WriteLine("\nTong cac so chan cua day so {0} là {1}",
                         daySo, TongSoChan(daySo, out tongChan));
                 }
+
+                else if (key == '4')
+                {
+                    goto Nhap_Day_So;
+                }
+
                 else if (key == 'x')
                 {
                     break;
@@ -160,6 +167,8 @@ namespace Tien_Bai2_Sep
             Console.WriteLine("||2. Tong cac so le trong day so  ||");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("||3. Tong cac so chan trong day so||");
+            Console.ForegroundColor = ConsoleColor.DarkMagenta;
+            Console.WriteLine("||4. Nhap day so moi              ||");
             Console.ForegroundColor = ConsoleColor.DarkGray;
             Console.WriteLine("||x. Thoat chuong trinh           ||");
             Console.ForegroundColor = ConsoleColor.Red;
