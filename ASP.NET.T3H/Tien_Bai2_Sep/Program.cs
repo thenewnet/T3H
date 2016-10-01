@@ -160,6 +160,8 @@ namespace Tien_Bai2_Sep
             Console.WriteLine("||2. Tong cac so le trong day so  ||");
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("||3. Tong cac so chan trong day so||");
+            Console.ForegroundColor = ConsoleColor.DarkGray;
+            Console.WriteLine("||x. Thoat chuong trinh           ||");
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("====================================");
             Console.ForegroundColor = ConsoleColor.Blue;
