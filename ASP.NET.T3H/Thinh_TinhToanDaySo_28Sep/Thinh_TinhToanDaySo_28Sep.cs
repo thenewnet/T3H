@@ -91,7 +91,7 @@ namespace Thinh_TinhToanDaySo_28Sep
         //Phuong thuc tinh tong le
         private static void CalSumOdd(ArrayList arr)
         {
-            Console.WriteLine("-----------------------Chon phep tinh 3-----------------------------");
+            Console.WriteLine("-----------------------Chon phep tinh 2-----------------------------");
             //Kiem tra ->comment CheckOrder
             CheckOrder();
 
