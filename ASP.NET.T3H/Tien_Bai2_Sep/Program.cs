@@ -10,11 +10,17 @@ namespace Tien_Bai2_Sep
     {
         static void Main(string[] args)
         {
+            RunProgram();
+        }
+
+        //Chay chuong trinh
+        public static void RunProgram() 
+        {
             string daySo;
             char key = new char();
             int tong, tongLe, tongChan;
             NhapDaySo(out daySo);
-            
+
             while (true)
             {
                 HienThiMenu(daySo);
