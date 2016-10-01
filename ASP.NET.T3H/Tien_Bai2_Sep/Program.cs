@@ -10,24 +10,36 @@ namespace Tien_Bai2_Sep
     {
         static void Main(string[] args)
         {
+            //Chay ham Run chuong trinh
             RunProgram();
         }
 
         //Chay chuong trinh
         public static void RunProgram() 
         {
+            //Day so nguyen
             string daySo;
+            
+            //Phim chuc nang
             char key = new char();
+
+            //Cac loai tong
             int tong, tongLe, tongChan;
+
+            //Bat nguoi dung nhap vao day so
             NhapDaySo(out daySo);
 
             while (true)
             {
+                //Hien thi menu ra cho nguoi dung chon
                 HienThiMenu(daySo);
+                
+                //Nguoi dung nhap phim chuc nang
                 NhapPhimChucNang(out key);
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine();
+                //Kiem tra va thuc hien chuc nang
                 if (key == '1')
                 {
                     Console.WriteLine("\nTong cac so trong day so {0} là {1}",
@@ -54,6 +66,7 @@ namespace Tien_Bai2_Sep
 
                 Console.WriteLine("\nBam phim bat ki de tiep tuc");
                 Console.ReadKey(false);
+                //Xoa man hinh
                 Console.Clear();
             }
         }
@@ -62,19 +75,28 @@ namespace Tien_Bai2_Sep
         public static List<int> TachChuoi(string daySo)
         {
             List<int> resultList = new List<int>();
+
+            //Tach lay cac string ngan cach boi dau ";"
             string[] str_tok = daySo.Split(';');
+
+            //Dung vong lap de kiem tra va chuyen cac string
+            //vua tach duoc thanh so nguyen
             for (int i = 0; i < str_tok.Length; i++)
             {
                 int numIndex;
                 bool checkNumber = int.TryParse(str_tok[i], out numIndex);
                 if (checkNumber)
                 {
+                    //Neu convert dung thi add vao List
                     resultList.Add(numIndex);
                 }
                 else {
+                    //Neu convert sai thi add 0 vao List
                     resultList.Add(0);
                 }
             }
+
+            //Tra ve mang so nguyen thu duoc
             return resultList;
         }
 
@@ -123,6 +145,7 @@ namespace Tien_Bai2_Sep
         //Ham hien thi menu cho nguoi dung chon
         public static void HienThiMenu(string daySo) 
         {
+            //Dat mau cho chu
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.WriteLine("Day so nguyen: {0}", daySo);
             Console.ForegroundColor = ConsoleColor.Red;
