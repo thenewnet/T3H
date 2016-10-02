@@ -66,6 +66,7 @@ namespace Tien_Bai2_Sep
                 {
                     break;
                 }
+
                 else
                 {
                     Console.WriteLine("\nNhap sai => Nhap lai ! ");
