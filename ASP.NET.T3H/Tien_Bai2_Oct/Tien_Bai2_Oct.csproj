@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>9e46c1d1-12bf-47f6-b8bb-c45b76bd854f</ProjectGuid>
+    <ProjectGuid>{D10AFF72-0FFD-4093-900B-087F1693ECC9}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Tien_Bai2_Oct</RootNamespace>

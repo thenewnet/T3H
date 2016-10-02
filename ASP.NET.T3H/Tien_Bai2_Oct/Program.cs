@@ -172,8 +172,8 @@ namespace Tien_Bai2_Oct
         //Phat sinh day so ngau nhien
         public static void PhatSinhMang(ref int[] a)
         {
-        NhapPhanTu:
-            Console.Write("Nhap so phan tu trong mang: ");
+            NhapPhanTu:
+                Console.Write("Nhap so phan tu trong mang: ");
 
             int n;
 
