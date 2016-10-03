@@ -129,7 +129,7 @@ Global
 		{45909555-AC18-4989-B27A-C2803A2B9B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45909555-AC18-4989-B27A-C2803A2B9B2E}.Release|Any CPU.Build.0 = Release|Any CPU
 
->>>>>>> 252f7d2db50ccc8b802039ca8e00de95602e1707
+252f7d2db50ccc8b802039ca8e00de95602e1707
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
