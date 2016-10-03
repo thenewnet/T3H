@@ -24,7 +24,7 @@ namespace Tien_Bai2_Oct
             int[] a = new int[1];
 
             //Cac loai tong
-            int tong, tongLe, tongChan;
+            int tong, tongLe;
 
             while (true)
             {
@@ -36,6 +36,7 @@ namespace Tien_Bai2_Oct
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine();
+                
                 //Kiem tra va thuc hien chuc nang
                 if (key == '1')
                 {
@@ -69,14 +70,17 @@ namespace Tien_Bai2_Oct
                     SapXepMangGiamDan(ref a);
                     XuatMang(a);
                 }
+
                 else if (key == '7')
                 {
                     InLonNhat(a);
                 }
+
                 else if (key == 'x')
                 {
                     break;
                 }
+
                 else
                 {
                     Console.WriteLine("\nNhap sai => Nhap lai ! ");
@@ -113,24 +117,12 @@ namespace Tien_Bai2_Oct
             return tong;
         }
 
-        //Ham tinh tong cac so chan trong day so
-        public static int TongSoChan(int[] a, out int tong)
-        {
-            tong = 0;
-            for (int i = 0; i < a.Length; i++)
-            {
-                if (a[i] % 2 == 0)
-                    tong += a[i];
-            }
-            return tong;
-        }
-
         //Sap xep mang tang dan
         public static void SapXepMangTangDan(ref int[] a)
         {
             for (int i = 0; i < a.Length - 1; i++)
             {
-                for (int j = i; j < a.Length; j++)
+                for (int j = i+1; j < a.Length; j++)
                 {
                     if (a[i] > a[j])
                     {
@@ -147,7 +139,7 @@ namespace Tien_Bai2_Oct
         {
             for (int i = 0; i < a.Length - 1; i++)
             {
-                for (int j = i; j < a.Length; j++)
+                for (int j = i+1; j < a.Length; j++)
                 {
                     if (a[i] < a[j])
                     {
@@ -187,6 +179,7 @@ namespace Tien_Bai2_Oct
                 Console.WriteLine("Nhap sai => Nhap lai!");
                 goto NhapPhanTu;
             }
+
             int soPhanTu = a.Length;
             Random r = new Random();
             for (int i = 0; i < soPhanTu; i++)
