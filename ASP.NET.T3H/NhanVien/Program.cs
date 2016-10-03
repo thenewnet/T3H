@@ -48,10 +48,13 @@ namespace NhanVien
 
         public static void TinhLuong(ref NhanVien nv)
         {
+            //Neu la nam
             if (nv.gioiTinh == 0)
             {
                 nv.luong = nv.soSanPham * nv.donGia;
             }
+
+            //Neu la nu thi phai X 10% (tuc la X 1.1)
             else
             {
                 nv.luong = nv.soSanPham * nv.donGia * 1.1;
