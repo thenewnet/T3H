@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Thinh_GiaiPhuongTrinhBacNhat_28Sep
 {
-    class Thinh_GiaiPhuongTrinhBacNhat
+    public class Thinh_GiaiPhuongTrinhBacNhat
     {
            
         #region Main
@@ -55,13 +55,14 @@ namespace Thinh_GiaiPhuongTrinhBacNhat_28Sep
         //-Phai la kieu float
         //-Co gia tri tu limitMin den limitMax
         //-Tra ve gia tri thoa man trong tmp.
-        public static void CheckNumber(ref float tmp, string message, float max = 100, float min = float.MinValue)
+        public static void CheckNumber(ref float tmp, string message, float max = 100, float min = float.MinValue,float flag=float.MinValue)
         {
             bool checkI = false;
+            //Console.WriteLine()
             do
             {
                 //Neu nhap lan dau thi doc tu man hinh => kiem tra dk so float
-                if (tmp == min)
+                if (tmp == flag)
                 {
                     checkI = float.TryParse(Console.ReadLine(), out tmp);
                     if (tmp > max) checkI = false;

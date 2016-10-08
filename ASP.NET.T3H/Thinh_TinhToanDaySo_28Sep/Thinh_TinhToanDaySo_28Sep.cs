@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Thinh_TinhToanDaySo_28Sep
 {
-    class Thinh_TinhToanDaySo_28Sep
+    public class Thinh_TinhToanDaySo_28Sep
     {
        
         #region Variable
