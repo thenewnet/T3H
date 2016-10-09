@@ -20,6 +20,7 @@ namespace Duy_Bai3_2Oct
                 Console.Write("{0} ", a[i]);
             }
             Console.ReadLine();
+
         }
     }
 }
